@@ -1,0 +1,372 @@
+.login-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(233, 231, 231);
+  padding: 20px;
+  z-index: 9999;
+}
+
+.login-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 440px;
+}
+
+.login-icon {
+  width: 64px;
+  height: 64px;
+  background: var(--base-color-blue);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot-link {
+  font-size: 13px;
+  color: #43319e;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  pointer-events: none;
+  display: block;
+  left: 18px !important;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ca3af;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding-left: 50px !important;
+  padding-right: 56px !important;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ca3af;
+  padding: 0;
+  right: 18px !important;
+}
+
+.password-toggle:hover {
+  color: #6b7280;
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background: var(--base-color-blue);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 8px;
+}
+
+.login-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(74, 111, 165, 0.3);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+/* Back Button */
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 24px;
+  transition: color 0.2s;
+}
+
+.back-btn:hover {
+  color: #374151;
+}
+
+/* Forgot Link as Button */
+.forgot-link {
+  font-size: 13px;
+  color: #4a6fa5;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Verification Code Inputs */
+.code-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.code-input {
+  width: 48px;
+  height: 56px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #1a1a2e;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.code-input:focus {
+  border-color: #4a6fa5;
+  box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.1);
+  outline: none;
+}
+
+/* Email Highlight */
+.email-highlight {
+  color: #4a6fa5;
+  font-weight: 500;
+}
+
+/* Resend Section */
+.resend-section {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.resend-section .timer {
+  color: #4a6fa5;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.resend-btn {
+  background: none;
+  border: none;
+  color: #4a6fa5;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+}
+
+.resend-btn:hover {
+  text-decoration: underline;
+}
+
+/* Password Strength */
+.password-strength {
+  margin-top: 8px;
+}
+
+.strength-bar {
+  height: 4px;
+  background: #e5e7eb;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.strength-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.strength-fill.weak {
+  background: linear-gradient(90deg, #ef4444, #f87171);
+}
+
+.strength-fill.good {
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+.strength-fill.strong {
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+}
+
+.strength-text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Password Match */
+.password-match {
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.password-match.match {
+  color: #22c55e;
+}
+
+.password-match.no-match {
+  color: #ef4444;
+}
+
+/* Button Spinner */
+.btn-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Success Card */
+.success-card {
+  text-align: center;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #00C950 0%, #009966 100%) !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  animation: successPop 0.5s ease;
+}
+
+@keyframes successPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success-title {
+  color: black;
+}
+
+/* Verify Icon Style */
+.verify-icon {
+  background: var(--base-color-blue);
+}

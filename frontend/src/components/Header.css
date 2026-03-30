@@ -1,0 +1,49 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  animation: slideDown 0.4s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  scale: 1.7;
+}
+
+/* Optional: make it responsive for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 16px;
+  }
+
+  .logo-img {
+    height: 42px;
+  }
+}
